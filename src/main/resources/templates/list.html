@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8" />
+      <title>blank</title>
+      <style type="text/css">
+   .block1 { 
+
+   }
+   
+   </style>
+      <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+      
+   </head>
+   <body>
+   <table>
+      <tr th:each="man: ${manlist}">
+      	<td> <a th:href="@{start(id=${man.getId})}">go on</a> <td/><td> <p th:text="${man.getName()}"> <p/> <td/>
+      	
+      </tr>
+      
+   </table>
+   
+   
+   
+   <p th:text="${ermsg}"> <p/>
+   </body>
+   
+</html>
+ 

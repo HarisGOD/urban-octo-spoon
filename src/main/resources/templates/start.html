@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8" />
+      <title>start</title>
+      <style type="text/css">
+   .block1 { 
+
+   }
+   </style>
+      <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+   </head>
+   <body>
+   
+      <h1>blank</h1>
+      <h3> имя и возвраст:  </h3>
+      
+      
+      <form method="POST" action="/register">
+      <label for="first">возвраст</label>
+      <input name="first" type="text" id="first"/>
+      
+      <br>
+      
+      <label for="second">имя и фамилия</label>
+      <input name="second" type="text" id="second"/>
+      
+      
+      
+      <br>
+      
+      <input type="submit" value="Submit" />
+      
+      </form>
+   <p><a th:href="@{/list}" > list </a><p/>
+   <p th:text="${list}"> <p/>
+   
+   </body>
+   
+</html>
+ 

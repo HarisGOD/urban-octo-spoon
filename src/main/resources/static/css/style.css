@@ -1,0 +1,21 @@
+h1 {
+    color:#333366;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color:#ff8000;
+}
+
+h3{
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color:#000080
+}
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 5px;
+}
